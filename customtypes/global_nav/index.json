@@ -1,0 +1,10 @@
+{
+  "format": "custom",
+  "id": "global_nav",
+  "label": "Global Nav",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}
