@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { repositoryName } from "@/prismicio";
+import { PrismicPreview } from "@prismicio/next";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sans = Nunito({
   subsets: ["latin"],
-});
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,12 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+		<html lang="en">
+			<body
+				className={`${sans.variable} antialiased`}
+			>
+				{children}
+				<PrismicPreview repositoryName={repositoryName} />
+			</body>
+		</html>
+	);
 }
