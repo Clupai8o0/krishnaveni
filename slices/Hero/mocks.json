@@ -30,7 +30,7 @@
 										"background": "transparent"
 									},
 									"credits": null,
-									"alt": null,
+									"alt": "Some alt tet",
 									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
@@ -84,6 +84,93 @@
 										"__TYPE__": "ExternalLink",
 										"url": "https://slicemachine.dev",
 										"text": "journey"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"background_image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA4MDY1ODN8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced grapefruits",
+									"origin": {
+										"id": "ezSFnAFi9hY",
+										"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA4MDY1ODN8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3024,
+										"height": 4032
+									},
+									"width": 3024,
+									"height": 4032,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading1",
+											"content": {
+												"text": "Give Away",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Tempor nostrud culpa proident aliquip nostrud ad eiusmod qui fugiat occaecat. Esse quis eiusmod ipsum culpa consectetur qui. Elit laboris amet minim aliquip anim aliquip dolor ullamco aliquip adipisicing occaecat labore occaecat.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"call_to_action",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "d6fdf122-6e1b-4691-b87a-e5fa29bccc19",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"kind": "any",
+										"text": "Balls"
+									}
+								}
+							],
+							[
+								"learn_more",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "486ce431-31bd-42e5-8f7b-27cce52b244b",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"kind": "any",
+										"text": "Sack"
 									}
 								}
 							]
