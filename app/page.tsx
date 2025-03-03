@@ -26,10 +26,12 @@ import { components } from "@/slices";
 // 	};
 // }
 
+
 export default async function Index() {
 	// The client queries content from the Prismic API
 	const client = createClient();
-	const home = await client.getByUID("home_page", "home");
+	// const home = await client.getByUID("home_page", "home");
+	const home = await client.getSingle("home_page");
 
 	return <SliceZone slices={home.data.slices} components={components} />;
 }

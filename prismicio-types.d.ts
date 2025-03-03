@@ -4,7 +4,74 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-interface GlobalNavDocumentData {}
+/**
+ * Item in *Global Nav → Nav Links*
+ */
+export interface GlobalNavDocumentDataNavLinksItem {
+  /**
+   * Nav Link field in *Global Nav → Nav Links*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_nav.nav_links[].nav_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  nav_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
+}
+
+/**
+ * Item in *Global Nav → CTA Links*
+ */
+export interface GlobalNavDocumentDataCtaLinksItem {
+  /**
+   * CTA Link field in *Global Nav → CTA Links*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_nav.cta_links[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    "Primary" | "Secondary"
+  >;
+}
+
+/**
+ * Content for Global Nav documents
+ */
+interface GlobalNavDocumentData {
+  /**
+   * Nav Links field in *Global Nav*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_nav.nav_links[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  nav_links: prismic.GroupField<Simplify<GlobalNavDocumentDataNavLinksItem>>;
+
+  /**
+   * CTA Links field in *Global Nav*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_nav.cta_links[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  cta_links: prismic.GroupField<Simplify<GlobalNavDocumentDataCtaLinksItem>>;
+}
 
 /**
  * Global Nav document from Prismic
@@ -223,6 +290,8 @@ declare module "@prismicio/client" {
     export type {
       GlobalNavDocument,
       GlobalNavDocumentData,
+      GlobalNavDocumentDataNavLinksItem,
+      GlobalNavDocumentDataCtaLinksItem,
       HomePageDocument,
       HomePageDocumentData,
       HomePageDocumentDataSlicesSlice,

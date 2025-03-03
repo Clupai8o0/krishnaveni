@@ -2,5 +2,5 @@
   "repositoryName": "krishnaveni",
   "adapter": "@slicemachine/adapter-next",
   "libraries": ["./slices"],
-  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+  "localSliceSimulatorURL": "https://localhost:3000/slice-simulator"
 }
