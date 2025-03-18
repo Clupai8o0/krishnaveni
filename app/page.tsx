@@ -1,4 +1,5 @@
 import About from "@/components/content/about";
+import CTA from "@/components/content/cta";
 import Hero from "@/components/content/hero";
 import News from "@/components/content/news";
 import Shortcuts from "@/components/content/shortcuts";
@@ -16,6 +17,7 @@ export default function Home() {
 			<News />
 			<Values />
 			<Testimonials />
+			<CTA />
 		</main>
 	);
 }

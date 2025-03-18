@@ -7,7 +7,7 @@ import { footerLinks, navLinks } from "@/lib/links";
 
 function Footer() {
 	return (
-		<footer className="bg-gray-900 py-12 md:py-18 w-full px mt-24">
+		<footer className="bg-gray-900 py-12 md:py-18 w-full px">
 			<Bounded>
 				<div className="md:flex md:items-center xl:items-start md:justify-between">
 					<Link href="/" className="flex items-start mb-4 sm:mb-0">
