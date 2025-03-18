@@ -52,7 +52,7 @@ function Hero() {
 		<section>
 			<Carousel
 				plugins={[plugin.current]}
-				className="w-full h-[80vh] bg-black relative"
+				className="w-full h-[85vh] bg-black relative rounded-b-[10%] overflow-hidden"
 			>
 				<CarouselContent>
 					{data.map(({ img: { src, alt } }) => (
@@ -60,7 +60,7 @@ function Hero() {
 							<img
 								src={src}
 								alt={alt}
-								className="w-full h-[80vh] object-cover opacity-40"
+								className="w-full h-[85vh] object-cover opacity-40"
 							/>
 						</CarouselItem>
 					))}

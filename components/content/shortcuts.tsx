@@ -9,20 +9,20 @@ const shortcuts = [
 	{
 		title: "Apply",
 		url: "/apply",
-		icon: "badge-check",
-		color: "bg-red-500",
+		icon: "user-round-check",
+		color: "blue-600",
 	},
 	{
-		title: "Contact Us",
+		title: "Contact",
 		url: "/contact",
-		icon: "badge-check",
-		color: "bg-blue-500",
+		icon: "phone-call",
+		color: "red-500",
 	},
 	{
 		title: "Gallery",
 		url: "/gallery",
-		icon: "badge-check",
-		color: "bg-green-500",
+		icon: "images",
+		color: "green-500",
 	},
 ];
 
@@ -43,13 +43,13 @@ const Shortcut = ({
 		<Link href={url}>
 			<div
 				className={cn(
-					"w-36 h-36 text-white flex items-center justify-center flex-col",
-					color,
+					"w-40 h-40 text-white flex items-center justify-center flex-col gap-3 rounded-full hover:scale-105 focus:scale-95 transition-all duration-200 shadow-lg",
+					`bg-${color}`,
 					className
 				)}
 			>
-				<DynamicIcon name={icon as any} size={48} color="white" />
-				<h2>{title}</h2>
+				<DynamicIcon name={icon as any} size={40} color="white" />
+				<h2 className="font-semibold text-lg">{title}</h2>
 			</div>
 		</Link>
 	);
@@ -58,20 +58,10 @@ const Shortcut = ({
 function Shortcuts() {
 	return (
 		<section className="h-[100px] relative">
-			<div className="absolute w-full -top-16 mx-auto">
-				<div className="flex justify-center">
+			<div className="absolute w-full -top-20 mx-auto">
+				<div className="flex justify-center gap-12">
 					{shortcuts.map((shortcut, i) => (
-						<Shortcut
-							key={generateKey()}
-							{...shortcut}
-							className={
-								i === 0
-									? "rounded-l-xl"
-									: i === shortcuts.length - 1
-									? "rounded-r-xl"
-									: undefined
-							}
-						/>
+						<Shortcut key={generateKey()} {...shortcut} />
 					))}
 				</div>
 			</div>
