@@ -10,19 +10,19 @@ const shortcuts = [
 		title: "Apply",
 		url: "/apply",
 		icon: "user-round-check",
-		color: "blue-600",
+		color: "bg-blue-600",
 	},
 	{
 		title: "Contact",
 		url: "/contact",
 		icon: "phone-call",
-		color: "red-500",
+		color: "bg-red-500",
 	},
 	{
 		title: "Gallery",
 		url: "/gallery",
 		icon: "images",
-		color: "green-500",
+		color: "bg-green-500",
 	},
 ];
 
@@ -44,7 +44,7 @@ const Shortcut = ({
 			<div
 				className={cn(
 					"w-40 h-40 text-white flex items-center justify-center flex-col gap-3 rounded-full hover:scale-105 focus:scale-95 transition-all duration-200 shadow-lg",
-					`bg-${color}`,
+					color,
 					className
 				)}
 			>
