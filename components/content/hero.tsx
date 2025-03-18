@@ -52,7 +52,7 @@ function Hero() {
 		<section>
 			<Carousel
 				plugins={[plugin.current]}
-				className="w-full h-[90vh] bg-black relative"
+				className="w-full h-[80vh] bg-black relative"
 			>
 				<CarouselContent>
 					{data.map(({ img: { src, alt } }) => (
@@ -60,14 +60,14 @@ function Hero() {
 							<img
 								src={src}
 								alt={alt}
-								className="w-full h-[90vh] object-cover opacity-40"
+								className="w-full h-[80vh] object-cover opacity-40"
 							/>
 						</CarouselItem>
 					))}
 				</CarouselContent>
 
 				<div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center px text-white">
-					<div className="max-w-2xl overflow-hidden w-full flex flex-col gap-4 items-center">
+					<div className="max-w-3xl w-full flex flex-col gap-4 items-center">
 						<h1 className="text-6xl font-extrabold text-white text-balance font-sans">
 							{title}
 						</h1>
@@ -75,13 +75,13 @@ function Hero() {
 						<div className="flex gap-4 mt-4">
 							<Link
 								href="/apply"
-								className="flex items-center justify-center px-8 py-2 bg-white text-black capitalize rounded-md font-medium"
+								className="flex items-center justify-center px-10 py-3 bg-blue-600 text-white capitalize rounded-full font-medium text-lg hover:scale-105 focus:scale-95 transition-all duration-200"
 							>
 								Apply
 							</Link>
 							<Link
 								href="/contact"
-								className="flex items-center justify-center px-8 py-2 text-white bg-transparent border border-white capitalize rounded-md font-medium"
+								className="flex items-center justify-center px-10 py-3 text-white bg-transparent border border-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200 hover:bg-white hover:text-black"
 							>
 								Contact Us
 							</Link>

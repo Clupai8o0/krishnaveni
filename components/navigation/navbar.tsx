@@ -48,9 +48,9 @@ function Navbar() {
 								<Link
 									href={url}
 									className={cn(
-										"opacity-80 font-medium text-lg hover:opacity-100 transition duration-300",
+										"opacity-80 font-medium text-lg hover:opacity-100 transition-all duration-200 hover:scale-105 focus:scale-95",
 										type === "primary" &&
-											"bg-[#3650AD] text-white px-10 py-3 rounded-full opacity-100 hover:scale-105"
+											"bg-blue-600 text-white px-10 py-3 rounded-full opacity-100 "
 									)}
 								>
 									{text}
