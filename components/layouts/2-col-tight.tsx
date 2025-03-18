@@ -13,7 +13,7 @@ function TwoColumnsTight({ col1, col2, className }: Props) {
 		<Bounded className="items-center pb-10">
 			<div
 				className={cn(
-					"max-w-6xl flex items-center border rounded-xl border-gray-300 shadow-[6px_6px_0_0_black] relative overflow-hidden",
+					"max-w-6xl flex items-center border rounded-4xl border-gray-300 shadow-[6px_6px_0_0_black] relative overflow-hidden",
 					className
 				)}
 			>

@@ -14,7 +14,7 @@ import { footerLinks, navLinks } from "@/lib/links";
 
 function Navbar() {
 	return (
-		<header className="fixed top-0 left-0 w-full z-50 px">
+		<header className="absolute top-0 left-0 w-full z-50 px">
 			<Bounded>
 				<nav className="flex justify-between items-center py-8 text-white">
 					<div className="flex items-center">
