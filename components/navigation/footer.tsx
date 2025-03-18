@@ -7,7 +7,7 @@ import { footerLinks, navLinks } from "@/lib/links";
 
 function Footer() {
 	return (
-		<footer className="bg-gray-900 py-12 md:py-18 w-full px">
+		<footer className="bg-gray-900 py-12 md:py-18 w-full px mt-24">
 			<Bounded>
 				<div className="md:flex md:items-center xl:items-start md:justify-between">
 					<Link href="/" className="flex items-start mb-4 sm:mb-0">
@@ -22,7 +22,7 @@ function Footer() {
 						</span> */}
 					</Link>
 
-					<div className="flex flex-col md:flex-row gap-y-3 xl:gap-y-0 gap-x-4 xl:gap-x-12 text-white mt-6 md:mt-0 xl:mt-4">
+					<div className="flex flex-col md:flex-row gap-y-3 xl:gap-y-0 gap-x-4 xl:gap-x-8 text-white mt-6 md:mt-0 xl:mt-4">
 						{footerLinks.map((link) => (
 							<div className="flex flex-col" key={generateKey()}>
 								<Link
@@ -37,7 +37,7 @@ function Footer() {
 					</div>
 				</div>
 
-				<hr className="my-6 border-gray-500 sm:mx-auto xl:my-8" />
+				<hr className="my-6 border-white sm:mx-auto xl:my-8" />
 
 				<div className="sm:flex sm:items-center sm:justify-between">
 					<span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
