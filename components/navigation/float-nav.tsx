@@ -23,7 +23,7 @@ const FloatingNavbar = () => {
 	return (
 		showFloatingNav && (
 			<motion.nav
-				className="w-screen flex justify-center z-30 fixed top-4 px"
+				className="w-screen flex justify-center z-50 fixed top-4 px"
 				variants={animationVariants}
 				initial="fromTop"
 				animate="visible"
@@ -37,7 +37,7 @@ const FloatingNavbar = () => {
 							<img
 								src="/logo-white.png"
 								alt="Krishnaveni in full caps text logo"
-								className="w-48"
+								className="w-40 md:w-48"
 							/>
 						</Link>
 

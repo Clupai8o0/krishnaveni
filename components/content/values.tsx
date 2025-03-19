@@ -12,12 +12,12 @@ import {
 
 function Values() {
 	return (
-		<Bounded>
+		<Bounded className="px">
 			<h1 className="text-5xl font-black mb-12 mt-18 text-center">
 				Our Values
 			</h1>
 
-			<div className="grid grid-cols-3">
+			<div className="grid grid-cols-2 md:grid-cols-3">
 				<div className="value-container border-r-2 border-b-2">
 					<div className="value-icon-cover border-yellow-500">
 						<Sparkles className="text-yellow-500 value-icon" />
@@ -28,7 +28,7 @@ function Values() {
 					</p>
 				</div>
 
-				<div className="value-container border-b-2 border-r-2">
+				<div className="value-container border-b-2 md:border-r-2">
 					<div className="value-icon-cover border-red-600">
 						<Heart className="value-icon text-red-600" />
 					</div>
@@ -38,7 +38,7 @@ function Values() {
 					</p>
 				</div>
 
-				<div className="value-container border-b-2">
+				<div className="value-container border-b-2 border-r-2 md:border-r-0">
 					<div className="value-icon-cover border-blue-600">
 						<Lightbulb className="value-icon text-blue-600" />
 					</div>
@@ -46,7 +46,7 @@ function Values() {
 					<p className="opacity-60">Encouraging Curiosity and Creativity</p>
 				</div>
 
-				<div className="value-container border-r-2">
+				<div className="value-container border-b-2 md:border-b-0 md:border-r-2">
 					<div className="value-icon-cover border-green-600">
 						<HeartHandshake className="value-icon text-green-600" />
 					</div>

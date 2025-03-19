@@ -97,7 +97,7 @@
 }
 
 .value-container {
-	@apply flex flex-col items-center py-18 border-gray-300 border-dashed;
+	@apply flex flex-col items-center py-18 px-6 border-gray-300 border-dashed text-center;
 }
 .value-icon {
 	@apply h-10 w-10;
@@ -106,5 +106,5 @@
 	@apply p-5 rounded-full flex items-center justify-center border-2 border-dashed;
 }
 .value-heading {
-  @apply font-black text-2xl mt-4;
+  @apply font-black text-2xl mt-4 mb-4;
 }

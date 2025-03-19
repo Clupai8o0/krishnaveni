@@ -11,7 +11,7 @@ function About() {
 			}
 			col2={
 				<div>
-					<h2 className="font-black text-4xl text-balance mb-4">
+					<h2 className="font-black text-4xl text-balance mb-6">
 						Shaping Young Minds for a <span className="text-yellow-500 underline underline-offset-8 decoration-wavy">Brighter Tomorrow</span>
 					</h2>
 					<p className="text-balance opacity-80">
