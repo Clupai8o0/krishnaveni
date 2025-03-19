@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/footer";
+import FloatingNavbar from "@/components/navigation/float-nav";
 
 const sans = Nunito({
 	subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${sans.variable} antialiased`}>
 				<Navbar />
+				<FloatingNavbar />
 				{children}
 				<Footer />
 			</body>
