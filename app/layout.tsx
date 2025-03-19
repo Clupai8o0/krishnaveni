@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/footer";
 import FloatingNavbar from "@/components/navigation/float-nav";
+import CTA from "@/components/content/cta";
 
 const sans = Nunito({
 	subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
 				<Navbar />
 				<FloatingNavbar />
 				{children}
+				<CTA />
 				<Footer />
 			</body>
 		</html>
