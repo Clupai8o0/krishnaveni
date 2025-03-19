@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
 import { Menu } from 'lucide-react';
 import { footerLinks } from '@/lib/links';
@@ -6,8 +8,10 @@ import { generateKey } from '@/lib/utils';
 import Link from 'next/link';
 
 function Sidebar() {
+	const [open, setOpen] = useState(false)
+
   return (
-		<Sheet>
+		<Sheet open={open} onOpenChange={setOpen}>
 			<SheetTrigger className="md:hidden">
 				<Menu className="w-8 h-8" />
 			</SheetTrigger>
@@ -22,7 +26,8 @@ function Sidebar() {
 							<li key={generateKey()}>
 								<Link
 									href={url}
-									className="text-white uppercase text-5xl font-light opacity-80 hover:font-semibold hover:opacity-100 transition-all duration-300"
+									onClick={() => setOpen(false)}
+									className="text-white uppercase text-3xl font-light opacity-80 hover:font-semibold hover:opacity-100 transition-all duration-300"
 								>
 									{text}
 								</Link>

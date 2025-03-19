@@ -17,7 +17,6 @@ export default function Home() {
 			<News />
 			<Values />
 			<Testimonials />
-			<CTA />
 		</main>
 	);
 }
