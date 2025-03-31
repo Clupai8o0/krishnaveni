@@ -8,7 +8,7 @@ import Sidebar from "./sidebar";
 
 function Navbar() {
 	return (
-		<header className="absolute top-0 left-0 w-full z-50 px">
+		<header className="absolute top-0 left-0 z-50 w-full px">
 			<Bounded>
 				<nav className="flex justify-between items-center py-8 text-white">
 					<div className="flex items-center">
@@ -20,7 +20,6 @@ function Navbar() {
 							/>
 						</Link>
 
-						{/* //* Links */}
 						<ul className="hidden md:flex gap-6 ml-12  items-center">
 							{navLinks.nav_links.map(({ url, text }) => (
 								<li key={generateKey()}>
@@ -35,25 +34,28 @@ function Navbar() {
 						</ul>
 					</div>
 
-					{/* //* CTA */}
 					<ul className="hidden md:flex gap-6 items-center">
 						{navLinks.cta_links.map(({ url, text, type }) => (
 							<li key={generateKey()}>
-								<Link
-									href={url}
-									className={cn(
-										"opacity-80 font-medium text-lg hover:opacity-100 transition-all duration-200 hover:scale-105 focus:scale-95",
-										type === "primary" &&
-											"bg-blue-600 text-white px-10 py-3 rounded-full opacity-100 "
-									)}
-								>
-									{text}
-								</Link>
+								{type === "primary" ? (
+									<Link
+										href="/apply"
+										className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 bg-blue-600 text-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200"
+									>
+										Apply
+									</Link>
+								) : (
+									<Link
+										href={url}
+										className="opacity-80 font-medium text-lg hover:opacity-100 transition duration-300"
+									>
+										{text}
+									</Link>
+								)}
 							</li>
 						))}
 					</ul>
 
-					{/* //* Sidebar */}
 					<Sidebar />
 				</nav>
 			</Bounded>

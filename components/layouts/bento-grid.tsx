@@ -52,8 +52,8 @@ function BentoGrid({
 		<Bounded className={cn("items-center px", className)}>
 			<h1 className="text-5xl font-black mb-12">{title}</h1>
 
-			<div className="w-full flex flex-col md:flex-row gap-6">
-				<div className="w-full md:w-1/2">
+			<div className="w-full flex flex-col lg:flex-row gap-6">
+				<div className="w-full lg:w-1/2">
 					<div className="w-full h-full bg-blue-600 text-white p-12 rounded-4xl">
 						<h2 className="font-black text-3xl mb-4">{content1.title}</h2>
 						<p className="text-balance opacity-80">{content1.description}</p>
@@ -65,7 +65,7 @@ function BentoGrid({
 					</div>
 				</div>
 
-				<div className="w-full md:w-1/2 h-full flex flex-col gap-6">
+				<div className="w-full lg:w-1/2 h-full flex flex-col gap-6">
 					<div className="flex-1 flex flex-col md:flex-row gap-3 bg-red-600 text-white p-12 rounded-4xl">
 						<div className="w-full md:w-1/2">
 							<h2 className="text-xl font-black mb-4">{content2.title}</h2>

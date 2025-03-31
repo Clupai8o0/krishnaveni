@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { v4 as generateKey } from "uuid";
@@ -60,16 +60,21 @@ const FloatingNavbar = () => {
 					<ul className="hidden md:flex gap-6 items-center">
 						{navLinks.cta_links.map(({ url, text, type }) => (
 							<li key={generateKey()}>
-								<Link
-									href={url}
-									className={cn(
-										"opacity-80 font-medium text-lg hover:opacity-100 transition-all duration-200 hover:scale-105 focus:scale-95",
-										type === "primary" &&
-											"bg-white text-black px-10 py-3 rounded-full opacity-100 "
-									)}
-								>
-									{text}
-								</Link>
+								{type === "primary" ? (
+									<Link
+										href="/apply"
+										className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 bg-white text-blue-600 capitalize rounded-full font-semibold hover:scale-105 focus:scale-95 transition-all duration-200"
+									>
+										Apply
+									</Link>
+								) : (
+									<Link
+										href={url}
+										className="opacity-80 font-medium text-lg hover:opacity-100 transition duration-300"
+									>
+										{text}
+									</Link>
+								)}
 							</li>
 						))}
 					</ul>
