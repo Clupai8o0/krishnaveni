@@ -60,7 +60,7 @@ function Values() {
 						<Goal className="value-icon text-orange-600" />
 					</div>
 					<h2 className="value-heading text-orange-600">Leadership</h2>
-					<p className="opacity-60">Inspirign Confidence and Responsibility</p>
+					<p className="opacity-60">Inspiring Confidence and Responsibility</p>
 				</div>
 				<div className="value-container">
 					<div className="value-icon-cover border-gray-600">

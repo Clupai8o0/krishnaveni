@@ -31,7 +31,6 @@ const FloatingNavbar = () => {
 				transition={{ duration: 0.4 }}
 			>
 				<div className="max-w-7xl flex items-center justify-between w-full shadow-md rounded-2xl bg-blue-600 transition-all duration-300 text-white px-8 py-8">
-					{/* LOGO + COUNTDOWN */}
 					<div className="flex items-center">
 						<Link href="/">
 							<img
@@ -41,7 +40,6 @@ const FloatingNavbar = () => {
 							/>
 						</Link>
 
-						{/* //* Links */}
 						<ul className="hidden md:flex gap-6 ml-12  items-center">
 							{navLinks.nav_links.map(({ url, text }) => (
 								<li key={generateKey()}>
@@ -56,7 +54,6 @@ const FloatingNavbar = () => {
 						</ul>
 					</div>
 
-					{/* //* CTA */}
 					<ul className="hidden md:flex gap-6 items-center">
 						{navLinks.cta_links.map(({ url, text, type }) => (
 							<li key={generateKey()}>
@@ -79,7 +76,6 @@ const FloatingNavbar = () => {
 						))}
 					</ul>
 
-					{/* LINKS - Mobile - SIDEBAR TOGGLE */}
 					<Sidebar />
 				</div>
 			</motion.nav>
