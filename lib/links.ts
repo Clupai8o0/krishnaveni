@@ -8,6 +8,10 @@ export const navLinks = {
 			url: "/gallery",
 			text: "Gallery",
 		},
+		{
+			url: "/message",
+			text: "Our Message"
+		}
 	],
 	cta_links: [
 		{
@@ -31,6 +35,10 @@ export const footerLinks = [
 	{
 		url: "/gallery",
 		text: "Gallery",
+	},
+	{
+		url: "/message",
+		text: "Our Message",
 	},
 	{
 		url: "/contact",
