@@ -108,3 +108,20 @@
 .value-heading {
   @apply font-black text-2xl mt-4 mb-4;
 }
+
+.reader-section {
+	@apply flex flex-col gap-2
+}
+
+.reader-section p ul ol {
+	@apply opacity-60;
+}
+.reader-section h2 {
+	@apply text-3xl font-extrabold mb-2;
+}
+.reader-section ul {
+	@apply list-disc list-inside;
+}
+.reader-section span {
+	@apply font-extrabold
+}

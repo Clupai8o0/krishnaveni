@@ -1,3 +1,5 @@
+import { text } from "stream/consumers";
+
 export const navLinks = {
 	nav_links: [
 		{
@@ -9,9 +11,13 @@ export const navLinks = {
 			text: "Gallery",
 		},
 		{
-			url: "/message",
-			text: "Our Message"
-		}
+			url: "/message/principal",
+			text: "Principal's Message",
+		},
+		{
+			url: "/message/chairman",
+			text: "Chairman's Message",
+		},
 	],
 	cta_links: [
 		{
@@ -37,8 +43,12 @@ export const footerLinks = [
 		text: "Gallery",
 	},
 	{
-		url: "/message",
-		text: "Our Message",
+		url: "/message/principal",
+		text: "Principal's Message",
+	},
+	{
+		url: "/message/chairman",
+		text: "Chairman's Message",
 	},
 	{
 		url: "/contact",

@@ -32,6 +32,14 @@ function Message() {
 					</span>
 				</div>
 			</div>
+			<div className="mt-12 flex justify-center items-center">
+				<Link
+					href="/message/principal"
+					className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 bg-blue-600 text-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200"
+				>
+					View Full Message
+				</Link>
+			</div>
 
 			<div className="flex items-center flex-row-reverse mt-20">
 				<div className="w-1/3">
@@ -52,14 +60,14 @@ function Message() {
 						Our job is to help students prepare themselves for anything.
 					</span>
 					<span className="mt-4 text-lg opacity-60">
-						- Polavarapu Venkata Rajendra Prasad (Chairman)
+						- P. V. Rajendra Prasad (Chairman)
 					</span>
 				</div>
 			</div>
 
-			<div className="mt-20 flex justify-center items-center">
+			<div className="mt-12 flex justify-center items-center">
 				<Link
-					href="/message"
+					href="/message/chairman"
 					className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 bg-blue-600 text-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200"
 				>
 					View Full Message
