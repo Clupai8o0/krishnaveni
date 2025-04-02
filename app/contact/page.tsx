@@ -1,8 +1,11 @@
+import NavbarBg from '@/components/navigation/navbar-bg'
 import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <main>
+      <NavbarBg />
+    </main>
   )
 }
 

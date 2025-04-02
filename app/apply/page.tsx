@@ -1,9 +1,12 @@
+import NavbarBg from '@/components/navigation/navbar-bg';
 import React from 'react'
 
 function Apply() {
   return (
-    <div>Apply</div>
-  )
+		<main>
+			<NavbarBg />
+		</main>
+	);
 }
 
 export default Apply

@@ -18,7 +18,7 @@ function Reader({ children, className, author: { img: { src, alt }, name } }: Pr
 				<img src={src} alt={alt} />
 				<p className="mt-4 italic font-bold">{name}</p>
 			</div>
-			<div className="w-2/3">{children}</div>
+			<div className="w-2/3 reader">{children}</div>
 		</Bounded>
 	);
 }

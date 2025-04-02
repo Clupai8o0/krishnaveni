@@ -20,7 +20,7 @@ function PrincipalMessage() {
 				<h1 className="mt-18 mb-8 text-5xl font-black">Principal's Message</h1>
 
 				<article className="flex flex-col gap-8 text-lg">
-					<section className="reader-section">
+					<section>
 						<p className="font-extrabold">
 							My Dear Students, Parents, and Well-Wishers,
 						</p>
@@ -49,7 +49,7 @@ function PrincipalMessage() {
 						</p>
 					</section>
 
-					<section className="reader-section">
+					<section>
 						<h2>Our Approach: Where Learning Comes Alive</h2>
 						<p>
 							What truly sets us apart is our commitment to making education
@@ -83,7 +83,7 @@ function PrincipalMessage() {
 						</p>
 					</section>
 
-					<section className="reader-section">
+					<section>
 						<h2>Beyond Academics: Building Character</h2>
 						<p>
 							While academic excellence is crucial, we measure success by more
@@ -113,7 +113,7 @@ function PrincipalMessage() {
 						</ol>
 					</section>
 
-					<section className="reader-section">
+					<section>
 						<h2>To Our Parents: Partners in Growth</h2>
 						<p>
 							Your trust humbles us. We see how mothers wipe anxious tears on
@@ -128,7 +128,7 @@ function PrincipalMessage() {
 						</ul>
 					</section>
 
-					<section className="reader-section">
+					<section>
 						<h2>Our Promise to Students</h2>
 						<p>When you walk through our gates:</p>
 						<ul>
@@ -163,7 +163,7 @@ function PrincipalMessage() {
 					<section>
 						<p className="font-extrabold">With unwavering commitment,</p>
 						<p>V. Kavitha</p>
-						<p>Principal</p>
+						<p className="italic">Principal</p>
 					</section>
 				</article>
 			</Reader>

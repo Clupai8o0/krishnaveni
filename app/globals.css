@@ -109,19 +109,24 @@
   @apply font-black text-2xl mt-4 mb-4;
 }
 
-.reader-section {
+.reader section {
 	@apply flex flex-col gap-2
 }
-
-.reader-section p ul ol {
+.reader p ul ol {
 	@apply opacity-60;
 }
-.reader-section h2 {
+.reader h2 {
 	@apply text-3xl font-extrabold mb-2;
 }
-.reader-section ul {
+.reader ul {
 	@apply list-disc list-inside;
 }
-.reader-section span {
+.reader ol {
+	@apply list-decimal list-inside;
+}
+.reader ol > ul {
+	@apply ml-5;
+}
+.reader span {
 	@apply font-extrabold
 }
