@@ -9,8 +9,8 @@ function Message() {
 				Our Message
 			</h1>
 
-			<div className="flex items-center">
-				<div className="w-1/3">
+			<div className="flex flex-col lg:flex-row items-center">
+				<div className="lg:w-1/3">
 					<img
 						src="/princi.png"
 						alt="Principal"
@@ -18,7 +18,7 @@ function Message() {
 					/>
 				</div>
 
-				<div className="flex flex-col items-start justify-center text-xl w-2/3 max-w-2xl relative h-full">
+				<div className="flex flex-col items-start justify-center text-xl lg:w-2/3 max-w-2xl relative h-full">
 					<div className="text-[200px] absolute top-0 -left-12">“</div>
 					<div className="text-[200px] absolute -bottom-20 right-12">”</div>
 					<span className="italic">

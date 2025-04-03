@@ -7,20 +7,20 @@ function Contact() {
 		<main>
 			<NavbarBg />
 
-			<Bounded className="flex-row px mt-18 text-lg mb-18">
-				<div className="w-1/2">
+			<Bounded className="max-w-3xl px mt-18 text-lg mb-18">
+				<div>
 					<h1 className="text-5xl font-black mb-4">Apply / Contact</h1>
 					<p className="opacity-80">
 						Have any questions about us? Or you wish to apply or schedule a
 						visit?
 					</p>
-					<p>
+					<p className="mt-1">
 						<span className="font-extrabold">Contact</span>: +91 99633 73679
 					</p>
 				</div>
 
-				<div className="w-1/2">
-					<h2 className="text-3xl font-extrabold mb-2">Address:</h2>
+				<div>
+					<h2 className="text-3xl font-extrabold mb-2 mt-8">Address:</h2>
 					<p className="opacity-80">
 						Krishnaveni School of Peerzadiguda, Peerzadiguda, Uppal, Hyderabad,
 						Telangana, 500039

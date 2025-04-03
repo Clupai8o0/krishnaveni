@@ -15,9 +15,9 @@ function PrincipalMessage() {
 					},
 					name: "V. Kavitha (Principal)",
 				}}
-				className="px mb-18"
+				className="px mb-18 mt-18"
 			>
-				<h1 className="mt-18 mb-8 text-5xl font-black">Principal's Message</h1>
+				<h1 className="mb-8 text-5xl font-black">Principal's Message</h1>
 
 				<article className="flex flex-col gap-8 text-lg">
 					<section>

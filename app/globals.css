@@ -119,10 +119,10 @@
 	@apply text-3xl font-extrabold mb-2;
 }
 .reader ul {
-	@apply list-disc list-inside;
+	@apply list-disc list-outside ml-4;
 }
 .reader ol {
-	@apply list-decimal list-inside;
+	@apply list-decimal list-outside ml-4;
 }
 .reader ol > ul {
 	@apply ml-5;
