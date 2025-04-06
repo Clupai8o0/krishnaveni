@@ -1,6 +1,7 @@
 import React from "react";
 import Bounded from "../layouts/bounded";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const Message = ({
 	img,
@@ -8,15 +9,17 @@ const Message = ({
 	q2,
 	author,
 	url,
+	reverse
 }: {
 	img: string;
 	q1: string;
 	q2: string;
 	author: string;
 	url: string;
+	reverse?: boolean;
 }) => (
 	<>
-		<div className="flex flex-col lg:flex-row items-center">
+		<div className={cn("flex flex-col lg:flex-row items-center", reverse && "lg:flex-row-reverse")}>
 			<div className="lg:w-1/3">
 				<img src={img} alt={author} className="w-full object-contain" />
 			</div>
@@ -65,6 +68,7 @@ function Messages() {
 				q2="Our job is to help students prepare themselves for anything."
 				author="P. V. Rajendra Prasad (Chairman)"
 				url="/message/chairman"
+				reverse
 			/>
 		</Bounded>
 	);

@@ -14,7 +14,7 @@ const data = [
 			alt: "Hero 1",
 		},
 		title: "Nurturing Young Minds, Building Bright Futures",
-		desc: "At Krishnaveni, we provide a strong foundation for lifelong learning with an enriching CBSE curriculum, modern teaching methods, and a nurturing environment for every child.",
+		desc: "At Krishnaveni, we provide a strong foundation for lifelong learning with an enriching TS SSC/CBSE curriculum, modern teaching methods, and a nurturing environment for every child.",
 	},
 	{
 		img: {
@@ -78,7 +78,7 @@ function Hero() {
 								className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 bg-blue-600 text-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200"
 							>
 								Apply
-							</Link>
+							</Link> 
 							<Link
 								href="/contact"
 								className="flex items-center justify-center px-6 md:px-10 py-2 md:py-3 text-white bg-transparent border border-white capitalize rounded-full font-medium hover:scale-105 focus:scale-95 transition-all duration-200 hover:bg-white hover:text-black"
