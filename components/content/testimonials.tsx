@@ -1,5 +1,18 @@
+"use client";
+
+import React from "react";
 import Bounded from "../layouts/bounded";
+import {
+	Carousel,
+	CarouselApi,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "../ui/carousel";
 import { AnimatedTestimonials } from "./animated-testimonials";
+import HeroVideoDialog from "../magicui/hero-video-dialog";
+import { generateKey } from "@/lib/utils";
 
 const testimonials = [
 	{
@@ -40,13 +53,52 @@ const testimonials = [
 ];
 
 function Testimonials() {
+	const [api, setApi] = React.useState<CarouselApi>();
+	const [current, setCurrent] = React.useState(0);
+	const [count, setCount] = React.useState(0);
+
+	React.useEffect(() => {
+		if (!api) {
+			return;
+		}
+
+		setCount(api.scrollSnapList().length);
+		setCurrent(api.selectedScrollSnap() + 1);
+
+		api.on("select", () => {
+			setCurrent(api.selectedScrollSnap() + 1);
+		});
+	}, [api]);
+
 	return (
-		<Bounded>
-			<h1 className="text-4xl text-center font-black mt-18">
-				What They Say About Us
-			</h1>
-			<AnimatedTestimonials testimonials={testimonials} />
-		</Bounded>
+		<div className="w-full mt-18 pt-10 pb-20 px">
+			<Bounded>
+				<h1 className="text-4xl text-center font-black">Why Choose Us?</h1>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+					{[
+						{ name: "Sharon Pappala", position: "Student" },
+						{ name: "Abinya", position: "Student" },
+						{ name: "Priya Jha", position: "Teacher" },
+						{ name: "Yamuna", position: "Parent" },
+					].map(({ name, position }, i) => (
+						<div className="flex flex-col">
+							<HeroVideoDialog
+								className="block h-full object-cover"
+								animationStyle="from-center"
+								key={generateKey()}
+								videoSrc={`/testimonials/(${i}).mp4`}
+								thumbnailSrc={`/testimonials/(${i}).png`}
+							/>
+							<div className="mt-2">
+								<p className="text-xl font-bold">{name}</p>
+								<span className="text-slate-400">{position}</span>
+							</div>
+						</div>
+					))}
+				</div>
+			</Bounded>
+		</div>
 	);
 }
 

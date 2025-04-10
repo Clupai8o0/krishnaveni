@@ -3,7 +3,7 @@ import { text } from "stream/consumers";
 export const navLinks = {
 	nav_links: [
 		{
-			url: "/",
+			url: "/home",
 			text: "Home",
 		},
 		{
@@ -35,7 +35,7 @@ export const navLinks = {
 
 export const footerLinks = [
 	{
-		url: "/",
+		url: "/home",
 		text: "Home",
 	},
 	{

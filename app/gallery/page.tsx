@@ -16,7 +16,7 @@ function Gallery() {
 		<main>
 			<NavbarBg />
 
-			<Bounded className="mb-18 space-y-10">
+			<Bounded className="mb-18 space-y-10 px">
 				<h1 className="mt-18 mb-8 text-5xl font-black">Our Gallery</h1>
 
 				<GallerySectionMasonry
