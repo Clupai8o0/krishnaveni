@@ -25,44 +25,42 @@ function News() {
 			title="News"
 			className="mt-12"
 			content1={{
-				title: "Bhongir Fort Trek",
+				title: "100% Pass Rate in 10th Grade!",
 				description:
-					'Krishnaveni adventurers trekked Bhongir Fort, studying its unique rock formations and medieval history. The climb fostered teamwork, with seniors helping juniors navigate the rugged path. "A perfect mix of exercise and learning!" said a Class 8 student.',
+					"Krishnaveni School celebrates a 100% pass rate in 10th grade! With free after-school tuition, strict pre-board exams, and practical mocks, students followed a disciplined study routine. Our dedicated support and structured schedules ensured every student succeeded—with toppers leading the way and making us proud.",
 				img: {
-					src: "hero-1.jpg",
+					src: "toppers.jpg",
 					alt: "students presenting science project",
 				},
 			}}
 			content2={{
-				title: "Cultural Fest Celebrations",
+				title: "Toppers Meet Alludu Seenu!",
 				description:
-					"Krishnaveni’s Cultural Fest showcased India’s diversity through classical dance showcase, folk music, and drama performances.",
-					// "Krishnaveni’s Cultural Fest showcased India’s diversity through classical dance showcase, folk music, and drama performances. The energetic and beautiful dance performances by the students stole the show.",
+					"Our school toppers met Telugu star Bellamkonda Srinivas, enjoyed lunch, took photos, and received inspiring words of encouragemen",
 				img: {
-					src: "/cultural.jpg",
+					src: "bellamkonda.jpg",
 					alt: "students presenting science project",
 				},
 			}}
 			content3={{
-				title: "Exciting New Digital Learning Initiative Launched",
+				title: "Celebrating Culture & Creativity!",
 				description:
-					"Krishnaveni CBSE School has introduced a new digital learning platform to enhance students' learning experiences.",
-				// "Krishnaveni CBSE School has introduced a new digital learning platform to enhance students' learning experiences. The initiative includes smart classrooms, interactive e-learning modules, and AI-powered assessments, ensuring personalized learning for every student. Teachers have been trained to integrate technology into their lessons, making education more engaging and effective. The school aims to keep pace with modern education trends and equip students with 21st-century skills.",
+					"Students showcased diverse cultures through dance, music, and plays—embracing traditions, costumes, and the arts in a vibrant school fest.",
 				img: {
 					src: "hero-1.jpg",
 					alt: "students presenting science project",
 				},
 			}}
-			content4={{
-				title: "Krishnaveni Students Shine in Inter-School Quiz Competition",
-				description:
-					"A team of grade 9 and 10 students from Krishnaveni CBSE School secured first place in the Hyderabad Inter-School Quiz Championship.",
-				// "A team of grade 9 and 10 students from Krishnaveni CBSE School secured first place in the Hyderabad Inter-School Quiz Championship. Competing against some of the city's top schools, the students impressed judges with their exceptional knowledge, quick thinking, and teamwork. The victory was a proud moment for the school, reinforcing its academic excellence and commitment to intellectual growth. The winners were felicitated in a special school assembly.",
-				img: {
-					src: "hero-1.jpg",
-					alt: "students presenting science project",
-				},
-			}}
+			// content4={{
+			// 	title: "Krishnaveni Students Shine in Inter-School Quiz Competition",
+			// 	description:
+			// 		"A team of grade 9 and 10 students from Krishnaveni CBSE School secured first place in the Hyderabad Inter-School Quiz Championship.",
+			// 	// "A team of grade 9 and 10 students from Krishnaveni CBSE School secured first place in the Hyderabad Inter-School Quiz Championship. Competing against some of the city's top schools, the students impressed judges with their exceptional knowledge, quick thinking, and teamwork. The victory was a proud moment for the school, reinforcing its academic excellence and commitment to intellectual growth. The winners were felicitated in a special school assembly.",
+			// 	img: {
+			// 		src: "hero-1.jpg",
+			// 		alt: "students presenting science project",
+			// 	},
+			// }}
 		/>
 	);
 }

@@ -70,17 +70,6 @@ function Gallery() {
 					url="https://www.facebook.com/share/p/1AAThAWyHs/"
 				/>
 				<GallerySectionBento
-					title="Children's Day"
-					images={{
-						0: "/childrens/(0).jpg",
-						1: "/childrens/(1).jpg",
-						2: "/childrens/(2).jpg",
-						3: "/childrens/(3).jpg",
-						4: "/childrens/(4).jpg",
-					}}
-					url="https://www.facebook.com/share/p/14wD2LJfqp/"
-				/>
-				<GallerySectionBento
 					title="Free Medical Check-up"
 					images={{
 						0: "/medical/(0).jpg",

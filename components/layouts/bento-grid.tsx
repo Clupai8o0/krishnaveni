@@ -29,14 +29,14 @@ interface Props {
 			alt: string;
 		};
 	};
-	content4: {
-		title: string;
-		description: string;
-		img: {
-			src: string;
-			alt: string;
-		};
-	};
+	// content4: {
+	// 	title: string;
+	// 	description: string;
+	// 	img: {
+	// 		src: string;
+	// 		alt: string;
+	// 	};
+	// };
 }
 
 // turn into url
@@ -46,7 +46,7 @@ function BentoGrid({
 	content1,
 	content2,
 	content3,
-	content4,
+	// content4,
 }: Props) {
 	return (
 		<Bounded className={cn("items-center px", className)}>
@@ -78,8 +78,20 @@ function BentoGrid({
 						/>
 					</div>
 
-					<div className="flex-1 flex md:flex-row flex-col gap-6">
-						<div className="w-full md:w-1/2 flex-1 bg-green-600 text-white rounded-4xl p-12 relative overflow-hidden">
+					<div className="flex-1 flex flex-col md:flex-row gap-3 bg-green-600 text-white p-12 rounded-4xl">
+						<div className="w-full md:w-1/2">
+							<h2 className="text-xl font-black mb-4">{content3.title}</h2>
+							<p className="text-balance opacity-80">{content3.description}</p>
+						</div>
+						<img
+							src={content3.img.src}
+							alt={content3.img.alt}
+							className="w-full md:w-1/2 h-full object-cover rounded-2xl mt-4 md:mt-0"
+						/>
+					</div>
+
+					{/* <div className="flex-1 flex md:flex-row flex-col gap-6">
+						<div className="w-full flex-1 bg-green-600 text-white rounded-4xl p-12 relative overflow-hidden">
 							<img
 								src={content3.img.src}
 								alt={content3.img.alt}
@@ -101,7 +113,7 @@ function BentoGrid({
 								<p className="opacity-80 text-balance">{content4.description}</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</Bounded>
